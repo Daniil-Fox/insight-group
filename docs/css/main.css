@@ -421,6 +421,7 @@ a:hover {
   color: #fff;
   background-color: transparent;
   cursor: pointer;
+  display: none;
 }
 .burger::before, .burger::after {
   content: "";
@@ -483,6 +484,13 @@ a:hover {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header {
@@ -1128,22 +1136,7 @@ a:hover {
   }
 }
 .offer__content {
-  max-width: 58rem;
-}
-@media (max-width: 768px) {
-  .offer__content {
-    max-width: 100%;
-  }
-}
-.offer__content--long {
-  max-width: 60rem;
-}
-@media (max-width: 768px) {
-  .offer__content--long {
-    max-width: 100%;
-  }
-}
-.offer__content--long .offer__desc {
+  text-align: center;
   max-width: 100%;
 }
 .offer__title {
@@ -1162,7 +1155,6 @@ a:hover {
 .offer__desc {
   margin: 0;
   margin-bottom: 3rem;
-  max-width: 47rem;
   font-weight: 400;
   font-size: 2.5rem;
   color: #fff;
@@ -1182,11 +1174,7 @@ a:hover {
   right: 9rem;
   width: 44.2rem;
   height: 56rem;
-}
-@media (max-width: 768px) {
-  .offer__img {
-    display: none;
-  }
+  display: none;
 }
 .offer__img img {
   width: 100%;

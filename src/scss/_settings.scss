@@ -312,4 +312,9 @@ a:hover {
 }
 .burger {
   @include burger;
+
+  display: none;
+  @include mobile {
+    display: flex;
+  }
 }
