@@ -1,0 +1,13 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Hero", sans-serif;
+  --second-family: "Helvetica", sans-serif;
+  --content-width: 120rem;
+  --container-offset: 1.5rem;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+}

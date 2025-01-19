@@ -1,0 +1,92 @@
+.tg {
+  padding: 4.5rem 0;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 0.05rem;
+    background-color: #a9876b;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+
+    padding: 0 5.5rem;
+
+    @include mobile {
+      padding: 0 4rem;
+      gap: 4rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 60rem;
+    flex-shrink: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 89%;
+    color: #fff;
+  }
+}
+
+.tg-plug {
+  border-left: 3px solid #378ad1;
+  border-radius: 2rem;
+  background: #233a4f;
+
+  padding: 1.5rem 1.7rem;
+  padding-right: 6rem;
+  font-family: var(--second-family);
+  line-height: 1;
+
+  position: relative;
+  &__tg {
+    margin: 0;
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    color: #3585c9;
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  &__desc {
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 113%;
+  }
+  &__img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

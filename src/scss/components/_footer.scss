@@ -1,0 +1,29 @@
+.footer {
+  padding: 3rem 0;
+  background-color: #202020;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #eee;
+  }
+
+  a.footer__text {
+    transition: 0.2s ease-in-out;
+    @include hover {
+      color: #a9876b;
+    }
+  }
+}

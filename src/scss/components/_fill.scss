@@ -1,0 +1,48 @@
+.fill {
+  padding: 3rem 0;
+
+  &__title {
+    margin-bottom: 7.4rem;
+
+    @include mobile {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 16rem;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+
+  &__images {
+    position: relative;
+    height: 40.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    &:nth-child(3n) {
+      grid-column: 2 span;
+    }
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

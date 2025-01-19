@@ -1,0 +1,28 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 89%;
+    color: #fff;
+
+    transition: 0.2s ease-in-out;
+
+    @include hover {
+      color: #a9876b;
+    }
+
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+}

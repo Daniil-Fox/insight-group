@@ -1,0 +1,22 @@
+.burger-menu {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  // height: 100vh;
+  background-color: rgba(#000, 0.2);
+  backdrop-filter: blur(1rem);
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-100%);
+  &__body {
+    padding: 5rem;
+    padding-top: 10rem;
+  }
+
+  &.menu--active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
